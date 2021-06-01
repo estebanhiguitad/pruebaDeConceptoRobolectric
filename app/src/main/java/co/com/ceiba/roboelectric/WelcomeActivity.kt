@@ -3,7 +3,6 @@ package co.com.ceiba.roboelectric
 import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
@@ -21,10 +20,10 @@ class WelcomeActivity : AppCompatActivity() {
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
         }
-        findViewById<Button>(R.id.button_two).setOnClickListener { buttonTwo_onClickListener(it)}
+        findViewById<Button>(R.id.button_two).setOnClickListener { buttonTwoOnClickListener()}
     }
 
-    private fun buttonTwo_onClickListener(button: View?) {
+    private fun buttonTwoOnClickListener() {
         findViewById<TextView>(R.id.textView_visibleOnClick).visibility = View.VISIBLE
     }
 

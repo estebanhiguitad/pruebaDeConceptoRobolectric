@@ -60,7 +60,7 @@ class WelcomeActivityTest {
     fun clickingButtonTwo_shouldAppearButton(){
         // Given
         val scenario = ActivityScenario.launch(WelcomeActivity::class.java)
-        var expectedText = View.VISIBLE
+        val expectedText = View.VISIBLE
         var actual = -1
 
         // When
